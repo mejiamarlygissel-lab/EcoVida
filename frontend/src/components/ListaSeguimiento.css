@@ -1,0 +1,151 @@
+h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+
+.seguimiento-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+
+
+
+
+.seguimiento-table thead {
+  background: linear-gradient(135deg, #0f2a19, #1eaf2c);
+}
+
+.seguimiento-table th {
+  padding: 16px;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: left;
+}
+
+.seguimiento-table td {
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155;
+}
+
+.seguimiento-table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+.seguimiento-table button {
+  padding: 8px 13px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+/* Contenedor de botones */
+.acciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Botón editar */
+.btn-editar{
+    background: #16a34a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Botón eliminar */
+.btn-eliminar{
+    background: #bb0b0b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-editar:hover,
+.btn-eliminar:hover{
+    opacity: 0.9;
+}
+
+.btn-guardar{
+    border: none;
+    padding: 9px 16px;
+    border-radius: 10px;
+    background: #1976d2;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+
+
+.busqueda-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    justify-content: flex-end;
+    
+}
+
+.busqueda-input {
+    width: 320px;
+    padding: 12px 15px;
+    border: 2px solid #4CAF50;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.busqueda-input:focus {
+    border-color: #2E7D32;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+}
+
+/* =====================================================
+   SEPARACIÓN ENTRE ENCABEZADO Y TABLA
+===================================================== */
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+}
+
+/* Tabla de seguimientos */
+.seguimiento-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 18px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+
+    /* ESTA ES LA IMPORTANTE */
+    margin-top: 25px;
+}
+

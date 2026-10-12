@@ -1,0 +1,552 @@
+/* =====================================================
+   CONTENEDOR PRINCIPAL
+===================================================== */
+
+.usuario-pagina {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4faf5;
+}
+
+.usuario-contenedor-principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* =====================================================
+   ENCABEZADO
+===================================================== */
+
+.usuario-card-modulo {
+    width: 100%;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #f1faf2 100%
+    );
+
+    border: 1px solid #cde8d2;
+    border-left: 6px solid #2e7d32;
+    border-radius: 16px;
+
+    box-shadow: 0 6px 20px rgba(46, 125, 50, 0.08);
+
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+/* =====================================================
+   ETIQUETA
+===================================================== */
+
+.usuario-etiqueta {
+    width: fit-content;
+    margin-bottom: 12px;
+    padding: 6px 16px;
+
+    background: #dff5e3;
+    color: #176b2c;
+
+    border: 1px solid #b9dfc0;
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .3px;
+}
+
+
+/* =====================================================
+   TITULO
+===================================================== */
+
+.usuario-card-modulo h1 {
+    margin: 0 0 10px;
+
+    color: #14532d;
+
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+/* =====================================================
+   DESCRIPCIÓN
+===================================================== */
+
+.usuario-card-modulo p {
+    margin: 0;
+
+    color: #52705a;
+
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   FORMULARIO
+===================================================== */
+
+.usuario-formulario-caja {
+    width: 100%;
+    padding: 35px 40px;
+
+    background: #ffffff;
+
+    border: 1px solid #d7e9da;
+    border-radius: 16px;
+
+    box-shadow: 0 6px 20px rgba(46, 125, 50, 0.06);
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   TITULO DEL FORMULARIO
+===================================================== */
+
+.usuario-formulario-caja h2 {
+    margin: 0 0 25px;
+
+    color: #14532d;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.usuario-formulario-caja h2::after {
+    content: "";
+
+    display: block;
+
+    width: 50px;
+    height: 3px;
+
+    margin-top: 8px;
+
+    background: linear-gradient(
+        90deg,
+        #2e7d32,
+        #81c784
+    );
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   GRID DEL FORMULARIO
+===================================================== */
+
+.usuario-form-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px 30px;
+}
+
+
+/* =====================================================
+   GRUPO
+===================================================== */
+
+.usuario-form-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+
+/* =====================================================
+   LABEL
+===================================================== */
+
+.usuario-form-group label {
+    margin-bottom: 8px;
+
+    color: #285c35;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   INPUTS Y SELECT
+===================================================== */
+
+.usuario-form-group input,
+.usuario-form-group select {
+    width: 100%;
+    min-height: 45px;
+
+    padding: 10px 15px;
+
+    box-sizing: border-box;
+
+    border: 1.5px solid #d7e6da;
+    border-radius: 10px;
+
+    background: #fbfefb;
+    color: #263c2b;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    outline: none;
+
+    transition: all .2s ease;
+}
+
+
+/* =====================================================
+   HOVER INPUT
+===================================================== */
+
+.usuario-form-group input:hover,
+.usuario-form-group select:hover {
+    border-color: #9ccc9f;
+    background: #ffffff;
+}
+
+
+/* =====================================================
+   PLACEHOLDER
+===================================================== */
+
+.usuario-form-group input::placeholder {
+    color: #8a9b8e;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   FOCUS
+===================================================== */
+
+.usuario-form-group input:focus,
+.usuario-form-group select:focus {
+    border-color: #2e7d32;
+
+    background: #ffffff;
+
+    box-shadow: 0 0 0 4px rgba(46, 125, 50, .1);
+
+    outline: none;
+}
+
+
+/* =====================================================
+   BOTONES DEL FORMULARIO
+===================================================== */
+
+.usuario-form-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+    padding-top: 20px;
+
+    border-top: 1px solid #e1eee3;
+}
+
+.usuario-form-buttons button {
+    min-height: 45px;
+
+    padding: 10px 30px;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =====================================================
+   GUARDAR
+===================================================== */
+
+.usuario-btn-guardar {
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #2e7d32,
+        #166534
+    );
+
+    border: none;
+
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2);
+}
+
+.usuario-btn-guardar:hover {
+    background: linear-gradient(
+        135deg,
+        #388e3c,
+        #14532d
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(46, 125, 50, 0.25);
+}
+
+.usuario-btn-guardar:active {
+    transform: translateY(0);
+}
+
+
+/* =====================================================
+   LIMPIAR
+===================================================== */
+
+.usuario-btn-limpiar {
+    color: #285c35;
+
+    background: #ffffff;
+
+    border: 1.5px solid #cde0d0;
+}
+
+.usuario-btn-limpiar:hover {
+    background: #eef8f0;
+
+    border-color: #8fbd96;
+
+    transform: translateY(-2px);
+}
+
+.usuario-btn-limpiar:active {
+    transform: translateY(0);
+}
+
+.usuario-mensaje-error {
+       display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 8px;
+    padding: 10px 14px;
+
+    background-color: #fff1f2;
+    border: 1px solid #f5a3ad;
+    border-radius: 7px;
+
+    color: #b4232f;
+    font-size: 14px;
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+.usuario-mensaje-error::first-letter {
+    font-size: 16px;
+}
+
+/* Cuando el mensaje aparece */
+.usuario-mensaje-error {
+    animation: aparecerError 0.2s ease-in-out;
+}
+
+@keyframes aparecerError {
+    from {
+        opacity: 0;
+        transform: translateY(-3px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.alerta-exito {
+  background-color: #e8f5e9; /* Un verde pastel muy suave y limpio */
+  border: 1px solid #c8e6c9;
+  border-left: 5px solid #2e7d32; /* Franja verde institucional a la izquierda */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.15);
+  animation: aparecerSuave 0.3s ease-in-out;
+}
+
+.alerta-exito p {
+  color: #1b5e20; /* Texto verde oscuro legible */
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.alerta-exito button {
+  background-color: #2e7d32; /* Verde EcoVida */
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.alerta-exito button:hover {
+  background-color: #1b5e20; /* Un verde más oscuro al pasar el mouse */
+}
+
+@keyframes aparecerSuave {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* =====================================================
+   BOTÓN REGRESAR
+===================================================== */
+
+.usuario-btn-regresar {
+    width: 100px;
+
+    min-height: 38px;
+
+    padding: 7px 14px;
+
+    margin-top: 15px;
+
+    align-self: center;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    color: #2e7d32;
+
+    border: 1.5px solid #2e7d32;
+    border-radius: 7px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
+
+}
+
+.usuario-btn-regresar:hover {
+    background: #2e7d32;
+    color: #ffffff;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 4px 10px rgba(46, 125, 50, 0.15);
+}
+
+.usuario-btn-regresar:active {
+    transform: translateY(0);
+}
+
+
+/* =====================================================
+   LISTA DE USUARIOS
+===================================================== */
+
+.usuario-contenedor-lista {
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.usuario-contenedor-lista table {
+    width: 100%;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    box-shadow: 0 6px 20px rgba(46, 125, 50, 0.06);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .usuario-pagina {
+        padding: 20px;
+    }
+
+    .usuario-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .usuario-form-buttons {
+        flex-direction: column;
+    }
+
+    .usuario-form-buttons button {
+        width: 100%;
+    }
+
+    .usuario-card-modulo {
+        padding: 25px 20px;
+    }
+
+    .usuario-card-modulo h1 {
+        font-size: 27px;
+    }
+}

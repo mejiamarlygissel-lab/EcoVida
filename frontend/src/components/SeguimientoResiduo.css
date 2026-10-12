@@ -1,0 +1,748 @@
+/* =====================================================
+   CONTENEDOR PRINCIPAL
+===================================================== */
+
+.pagina-seguimiento {
+
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 40px 35px 60px;
+
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Fondo suave */
+    background: linear-gradient(
+        180deg,
+        #ffffff00 0%,
+        #f8f8f800 50%,
+        #f2f4f200 100%
+    );
+}
+
+
+/* =====================================================
+   CONTENEDOR PRINCIPAL DEL MÓDULO
+===================================================== */
+
+.contenedor-principal {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    transform: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    box-sizing: border-box;
+
+    margin-top: 40px;
+}
+
+
+/* =====================================================
+   TARJETA SUPERIOR
+===================================================== */
+
+.card-modulo {
+    width: 100%;
+    min-height: 210px;
+    margin: 0;
+    padding: 40px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #f4fbf5 100%
+    );
+
+    border: 1px solid #dce9df;
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 42, 29, 0.09);
+
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Línea verde decorativa */
+
+.card-modulo::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 7px;
+
+    background: linear-gradient(
+        90deg,
+        #0f2a19,
+        #16803c,
+        #4caf50
+    );
+
+}
+
+
+/* =====================================================
+   TÍTULO SUPERIOR
+===================================================== */
+
+.card-modulo h1 {
+    margin: 0 0 12px;
+    color: #1b5e20;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+/* =====================================================
+   DESCRIPCIÓN
+===================================================== */
+
+.card-modulo p {
+    margin: 0;
+    max-width: 700px;
+    color: #64748b;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/* =====================================================
+   FORMULARIO
+===================================================== */
+
+.contenedor-formulario {
+    width: 100%;
+    padding: 40px 45px;
+
+    background: #ffffff;
+    border: 1px solid #dce9df;
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 42, 29, 0.08);
+
+    box-sizing: border-box;
+}
+
+.seguimiento-mensaje-error {
+    display: block;
+    margin-top: 6px;
+    color: #d93025;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* =====================================================
+   TÍTULO DEL FORMULARIO
+===================================================== */
+
+.titulo {
+
+    margin: 0 0 40px;
+
+    padding-bottom: 25px;
+
+    text-align: left;
+
+    color: #1b5e20;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    border-bottom: 2px solid #e8f2ea;
+
+    box-sizing: border-box;
+
+}
+
+
+/* =====================================================
+   FILA
+===================================================== */
+
+.fila {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px 40px;
+
+    margin-bottom: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+/* =====================================================
+   CAMPO
+===================================================== */
+
+.campo {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 30px;
+
+    box-sizing: border-box;
+
+}
+
+
+/* =====================================================
+   LABEL
+===================================================== */
+
+.campo label {
+
+    margin-bottom: 12px;
+
+    color: #28552f;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+}
+
+
+/* =====================================================
+   INPUT / SELECT / TEXTAREA
+===================================================== */
+
+.campo input,
+.campo select,
+.campo textarea {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    min-height: 64px;
+
+    padding: 17px 20px;
+
+    font-family: inherit;
+
+    font-size: 17px;
+
+    color: #374151;
+
+    background: #ffffff;
+
+    border: 1px solid #cddbd1;
+
+    border-radius: 14px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+
+}
+
+
+/* =====================================================
+   PLACEHOLDER
+===================================================== */
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+
+    color: #9ca3af;
+
+    font-size: 16px;
+
+}
+
+
+/* =====================================================
+   FOCUS
+===================================================== */
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+
+    outline: none;
+
+    border-color: #2e7d32;
+
+    background: #fbfffc;
+
+    box-shadow:
+        0 0 0 5px rgba(46, 125, 50, 0.12);
+
+}
+
+
+/* =====================================================
+   TEXTAREA
+===================================================== */
+
+.campo textarea {
+
+    min-height: 160px;
+
+    resize: vertical;
+
+    line-height: 1.5;
+
+}
+
+
+/* =====================================================
+   BOTÓN
+===================================================== */
+
+.seguimiento-form-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 5px;
+    padding-top: 20px;
+
+    border-top: 1px solid #e1eee3;
+}
+
+.seguimiento-form-buttons button {
+    min-height: 45px;
+
+    padding: 10px 28px;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
+}
+
+.seguimiento-btn-guardar {
+    color: #ffffff;
+
+    background: linear-gradient(
+        135deg,
+        #2e7d32,
+        #166534
+    );
+
+    border: none;
+
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2);
+}
+
+.seguimiento-btn-guardar:hover {
+    background: linear-gradient(
+        135deg,
+        #388e3c,
+        #14532d
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(46, 125, 50, 0.25);
+}
+
+.seguimiento-btn-limpiar {
+    color: #285c35;
+
+    background: #ffffff;
+
+    border: 1.5px solid #cde0d0;
+}
+
+.seguimiento-btn-limpiar:hover {
+    background: #eef8f0;
+
+    border-color: #8fbd96;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* =====================================================
+   BOTÓN PRINCIPAL
+===================================================== */
+
+.button {
+
+    min-height: 60px;
+
+    padding: 15px 45px;
+
+    background: linear-gradient(
+        135deg,
+        #16803c,
+        #2e7d32
+    );
+
+    color: #ffffff;
+
+    border: 1px solid #16803c;
+
+    border-radius: 13px;
+
+    font-family: inherit;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 16px rgba(22, 128, 60, 0.20);
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.button:hover {
+
+    background: linear-gradient(
+        135deg,
+        #116530,
+        #1b5e20
+    );
+
+    border-color: #116530;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 20px rgba(22, 128, 60, 0.28);
+
+}
+
+.seguimiento-btn-regresar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    padding: 13px 20px;
+
+    border: 1.5px solid #2e7d32;
+    border-radius: 6px;
+
+    background: white;
+    color: #2e7d32;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 20px;
+}
+
+.seguimiento-btn-regresar:hover {
+    background: #2e7d32;
+    color: white;
+}
+
+
+/* =====================================================
+   ACTIVE
+===================================================== */
+
+.button:active {
+
+    transform: translateY(0);
+
+}
+
+/* =====================================================
+   INFORMACIÓN DE LA CLASIFICACIÓN
+===================================================== */
+
+.campo-imformacion {
+    width: 100%;
+    margin-bottom: 35px;
+    padding: 30px;
+    background: #f8fcf9;
+    border: 1px solid #dce9df;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+.campo-imformacion h2 {
+    margin: 0 0 25px;
+    color: #1b5e20;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.clasificacion-ss {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 30px;
+}
+
+.clasificacion-form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.clasificacion-form-group label {
+    margin-bottom: 10px;
+    color: #28552f;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.clasificacion-form-group input {
+    width: 100%;
+    min-height: 58px;
+    padding: 15px 18px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #374151;
+    background: #f1f6f2;
+    border: 1px solid #cddbd1;
+    border-radius: 12px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   TABLA / LISTA
+===================================================== */
+
+.contenedor-lista {
+
+    width: 100%;
+
+    margin-top: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+/* =====================================================
+   EVITAR DESBORDAMIENTOS
+===================================================== */
+
+.pagina-seguimiento *,
+.pagina-seguimiento *::before,
+.pagina-seguimiento *::after {
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .pagina-seguimiento {
+
+        padding: 40px 30px 50px;
+
+    }
+
+    .fila {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+/* =====================================================
+   TABLET PEQUEÑA
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .pagina-seguimiento {
+
+        padding: 25px 20px 40px;
+
+    }
+
+
+    .card-modulo {
+
+        min-height: 220px;
+
+        padding: 40px 30px;
+
+    }
+
+
+    .card-modulo h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    .card-modulo p {
+
+        font-size: 17px;
+
+    }
+
+
+    .contenedor-formulario {
+
+        padding: 35px 25px;
+
+    }
+
+
+    .titulo {
+
+        font-size: 25px;
+
+    }
+
+
+    .campo label {
+
+        font-size: 16px;
+
+    }
+
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+
+        min-height: 58px;
+
+        font-size: 16px;
+
+    }
+
+
+    .button {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .pagina-seguimiento {
+
+        padding: 20px 15px 35px;
+
+    }
+
+
+    .card-modulo {
+
+        padding: 35px 20px;
+
+    }
+
+
+    .card-modulo h1 {
+
+        font-size: 29px;
+
+    }
+
+
+    .card-modulo p {
+
+        font-size: 16px;
+
+    }
+
+
+    .contenedor-formulario {
+
+        padding: 25px 18px;
+
+    }
+
+
+    .titulo {
+
+        font-size: 21px;
+
+    }
+
+
+    .campo {
+
+        margin-bottom: 22px;
+
+    }
+
+}

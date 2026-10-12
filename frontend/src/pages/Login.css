@@ -1,0 +1,262 @@
+/* ============================
+   CONTENEDOR PRINCIPAL
+============================ */
+
+.Login-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 8px;
+}
+
+
+/* ============================
+   TARJETA SUPERIOR
+============================ */
+
+.login-card-modulo {
+    width: 93%;
+    max-width: 1300px;
+    margin: 25px auto;
+    padding: 35px 30px;
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.08);
+    text-align: center;
+}
+
+.card-modulo h1 {
+    color: #1b5e1f00;
+    font-weight: bold;
+}
+
+.card-modulo p {
+    color: #555;
+    font-size: 17px;
+}
+
+
+/* ============================
+   CONTENEDOR LOGIN
+============================ */
+
+.login-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,.15);
+    align-items: stretch;
+}
+
+
+/* ============================
+   IMAGEN IZQUIERDA
+============================ */
+
+.login-left {
+    width: 60%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.login-left img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* ============================
+   CAPA OSCURA SOBRE LA IMAGEN
+============================ */
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(27,94,32,.25);
+}
+
+
+/* ============================
+   LADO DERECHO
+============================ */
+
+.login-right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+
+/* ============================
+   FORMULARIO
+============================ */
+
+.login-box {
+    width: 90%;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.12);
+}
+
+.login-box h2 {
+    text-align: center;
+    color: #1B5E20;
+    margin-bottom: 30px;
+}
+
+/* Mensaje de error */
+.login-mensaje-error {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 7px;
+    color: #ff3333;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+
+/* ============================
+   ETIQUETAS
+============================ */
+
+.login-box label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1d4e04;
+    font-weight: bold;
+    text-align: left;
+   
+}
+
+
+/* ============================
+   INPUTS Y SELECT
+============================ */
+
+.login-box input,
+.login-box select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #09da75;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.login-box input:focus,
+.login-box select:focus {
+    outline: none;
+    border-color: #2E7D32;
+    box-shadow: 0 0 8px rgba(46,125,50,.3);
+}
+
+
+/* ============================
+   BOTÓN
+============================ */
+
+.login-box button {
+    width: 65%;
+    padding: 14px;
+    background: #2E7D32;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+   
+    
+    
+}
+
+.login-box button:hover {
+    background: #1B5E20;
+    transform: scale(1.05);
+}
+
+
+/* ============================
+   REGISTRO
+============================ */
+
+.registro {
+    text-align: center;
+    margin-top: 30px;
+    color: #555;
+    margin-top: 23px;
+}
+
+.registro a {
+    color: #2E7D32;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.registro a:hover {
+    text-decoration: underline;
+}
+
+
+/* ============================
+   MENSAJES
+============================ */
+
+.success {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    color: #2e7d32;
+    background: #e8f5e9;
+    border: 1px solid #81c784;
+}
+
+.error {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    color: #c62828;
+    background: #ffebee;
+    border: 1px solid #ef9a9a;
+}
+
+
+/* ============================
+   RESPONSIVE
+============================ */
+
+@media (max-width:768px){
+
+    .login-container{
+        flex-direction: column;
+    }
+
+    .login-left,
+    .login-right{
+        width: 100%;
+    }
+
+    .login-left{
+        height: 250px;
+    }
+
+    .login-box{
+        width: 95%;
+    }
+}

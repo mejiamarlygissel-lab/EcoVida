@@ -1,0 +1,534 @@
+/* =====================================================
+   PÁGINA PRINCIPAL
+===================================================== */
+
+.clasificacion-pagina {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 30px 35px 50px;
+    box-sizing: border-box;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4faf5;
+}
+
+.clasificacion-pagina *,
+.clasificacion-pagina *::before,
+.clasificacion-pagina *::after {
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   CONTENEDOR PRINCIPAL
+===================================================== */
+
+.clasificacion-contenedor-principal {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+/* =====================================================
+   ENCABEZADO
+===================================================== */
+
+.clasificacion-card-modulo {
+    width: 100%;
+
+    padding: 35px 40px;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #f1faf2 100%
+    );
+
+    border: 1px solid #cde8d2;
+    border-top: 6px solid #2e7d32;
+    border-radius: 16px;
+
+    box-shadow: 0 6px 20px rgba(46, 125, 50, 0.08);
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =====================================================
+   TÍTULO
+===================================================== */
+
+.clasificacion-card-modulo h1 {
+    margin: 0 0 10px;
+
+    color: #14532d;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+/* =====================================================
+   DESCRIPCIÓN
+===================================================== */
+
+.clasificacion-card-modulo p {
+    margin: 0;
+
+    color: #52705a;
+
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   FORMULARIO
+===================================================== */
+
+.clasificacion-card-formulario {
+    width: 100%;
+
+    padding: 30px 35px;
+
+    background: #ffffff;
+
+    border: 1px solid #d7e9da;
+    border-radius: 16px;
+
+    box-shadow: 0 6px 20px rgba(46, 125, 50, 0.06);
+}
+
+
+/* =====================================================
+   FORMULARIO
+===================================================== */
+
+.clasificacion-form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+/* =====================================================
+   SECCIÓN
+===================================================== */
+
+.clasificacion-seccion {
+    width: 100%;
+
+    padding: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #f7fcf8 100%
+    );
+
+    border: 1px solid #d9e9dc;
+    border-radius: 14px;
+
+    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.06);
+
+    position: relative;
+}
+
+
+/* Línea verde lateral */
+
+.clasificacion-seccion::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 15px;
+    bottom: 15px;
+
+    width: 4px;
+
+    background: linear-gradient(
+        180deg,
+        #2e7d32,
+        #66bb6a
+    );
+
+    border-radius: 0 5px 5px 0;
+}
+
+.clasificacion-mensaje-error {
+    display: block;
+    margin-top: 6px;
+    color: #d93025;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   TÍTULO DE SECCIÓN
+===================================================== */
+
+.clasificacion-seccion h2 {
+    margin: 0 0 22px;
+
+    color: #14532d;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.clasificacion-form-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px 25px;
+}
+
+
+/* =====================================================
+   GRUPO
+===================================================== */
+
+.clasificacion-form-group {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Campo completo */
+
+.clasificacion-full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* =====================================================
+   LABEL
+===================================================== */
+
+.clasificacion-form-group label {
+    margin-bottom: 8px;
+
+    color: #285c35;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   INPUTS / SELECT / TEXTAREA
+===================================================== */
+
+.clasificacion-form-group input,
+.clasificacion-form-group select,
+.clasificacion-form-group textarea {
+    width: 100%;
+
+    min-height: 45px;
+
+    padding: 10px 15px;
+
+    border: 1.5px solid #d7e6da;
+    border-radius: 10px;
+
+    background: #fbfefb;
+    color: #263c2b;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    outline: none;
+
+    transition: all .2s ease;
+}
+
+
+/* =====================================================
+   PLACEHOLDER
+===================================================== */
+
+.clasificacion-form-group input::placeholder,
+.clasificacion-form-group textarea::placeholder {
+    color: #8a9b8e;
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.clasificacion-form-group input:hover,
+.clasificacion-form-group select:hover,
+.clasificacion-form-group textarea:hover {
+    border-color: #9ccc9f;
+    background: #ffffff;
+}
+
+
+/* =====================================================
+   FOCUS
+===================================================== */
+
+.clasificacion-form-group input:focus,
+.clasificacion-form-group select:focus,
+.clasificacion-form-group textarea:focus {
+    border-color: #2e7d32;
+
+    background: #ffffff;
+
+    box-shadow: 0 0 0 4px rgba(46, 125, 50, .1);
+}
+
+
+/* =====================================================
+   TEXTAREA
+===================================================== */
+
+.clasificacion-form-group textarea {
+    min-height: 120px;
+
+    resize: vertical;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   BOTONES
+===================================================== */
+
+.clasificacion-form-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 5px;
+    padding-top: 20px;
+
+    border-top: 1px solid #e1eee3;
+}
+
+.clasificacion-form-buttons button {
+    min-height: 45px;
+
+    padding: 10px 28px;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
+}
+
+
+/* =====================================================
+   GUARDAR
+===================================================== */
+
+.clasificacion-btn-guardar {
+    color: #ffffff;
+
+    background: linear-gradient(
+        135deg,
+        #2e7d32,
+        #166534
+    );
+
+    border: none;
+
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2);
+}
+
+.clasificacion-btn-guardar:hover {
+    background: linear-gradient(
+        135deg,
+        #388e3c,
+        #14532d
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(46, 125, 50, 0.25);
+}
+
+
+/* =====================================================
+   LIMPIAR
+===================================================== */
+
+.clasificacion-btn-limpiar {
+    color: #285c35;
+
+    background: #ffffff;
+
+    border: 1.5px solid #cde0d0;
+}
+
+.clasificacion-btn-limpiar:hover {
+    background: #eef8f0;
+
+    border-color: #8fbd96;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   BOTÓN REGRESAR
+===================================================== */
+
+.clasificacion-btn-regresar {
+    width: 100px;
+
+    min-height: 38px;
+
+    padding: 7px 14px;
+
+    align-self: center;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    color: #2e7d32;
+
+    border: 1.5px solid #2e7d32;
+    border-radius: 7px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
+
+    margin-top: 20px;
+}
+
+.clasificacion-btn-regresar:hover {
+    background: #2e7d32;
+    color: #ffffff;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 4px 10px rgba(46, 125, 50, 0.15);
+}
+
+
+/* =====================================================
+   LISTA
+===================================================== */
+
+.clasificacion-contenedor-lista {
+    width: 100%;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .clasificacion-pagina {
+        padding: 20px;
+    }
+
+    .clasificacion-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .clasificacion-card-modulo {
+        padding: 30px 25px;
+    }
+
+    .clasificacion-card-modulo h1 {
+        font-size: 29px;
+    }
+
+    .clasificacion-card-formulario {
+        padding: 25px;
+    }
+
+    .clasificacion-seccion {
+        padding: 25px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .clasificacion-pagina {
+        padding: 15px 12px 30px;
+    }
+
+    .clasificacion-card-modulo {
+        padding: 25px 18px;
+    }
+
+    .clasificacion-card-modulo h1 {
+        font-size: 26px;
+    }
+
+    .clasificacion-card-modulo p {
+        font-size: 15px;
+    }
+
+    .clasificacion-card-formulario {
+        padding: 18px;
+    }
+
+    .clasificacion-seccion {
+        padding: 20px;
+    }
+
+    .clasificacion-seccion h2 {
+        font-size: 20px;
+    }
+
+    .clasificacion-form-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .clasificacion-form-buttons button {
+        width: 100%;
+    }
+}

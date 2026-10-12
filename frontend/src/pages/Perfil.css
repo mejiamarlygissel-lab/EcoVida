@@ -1,0 +1,167 @@
+/*=========================
+    FONDO
+=========================*/
+.perfil-body {
+   width: 100%;
+    /* Usamos height exacto en lugar de min-height para que no crezca de más */
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eef8f1;
+    overflow: hidden; /* Elimina cualquier scroll por completo */
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/*=========================
+    TARJETA
+=========================*/
+.popover {
+   width: 100%;
+    max-width: 800px; /* Un poco más compacta para que luzca proporcionada */
+    background: #fff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
+}
+
+.popover:hover {
+    transform: translateY(-4px);
+}
+
+/*=========================
+    CABECERA
+=========================*/
+.gestion-banner {
+    background: #6fce67;
+    padding: 20px 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #184f18;
+}
+
+/*=========================
+    CONTENIDO
+=========================*/
+.perfil-content {
+    display: flex;
+    align-items: center;
+    gap: 35px; /* Reducido ligeramente para optimizar espacio */
+    padding: 30px; /* Reducido para evitar que se infle la tarjeta */
+}
+
+/*=========================
+    AVATAR
+=========================*/
+.avatar-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar-iniciales {
+    width: 90px;
+    height: 90px;
+    background: #2E7D32; /* Verde corporativo de EcoVida */
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Lo vuelve un círculo perfecto */
+    box-shadow: 0 4px 10px rgba(46, 125, 50, 0.3);
+    text-transform: uppercase;
+}
+
+.avatar-box a {
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.avatar-box a:hover {
+    text-decoration: underline;
+}
+
+/*=========================
+    FORMULARIO
+=========================*/
+.info-box {
+    flex: 1;
+}
+
+.info-box label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    color: #2E7D32;
+    font-weight: bold;
+}
+
+.info-box input {
+    width: 100%;
+    padding: 13px 15px;
+    border-radius: 10px;
+    border: 1px solid #d7d7d7;
+    font-size: 16px;
+    background: #f8f8f8;
+
+}
+
+.info-box input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 4px rgba(76, 175, 80, .15);
+}
+
+.info-box input:disabled {
+    background: #f7f7f7;
+    color: #555;
+}
+
+/*=========================
+    BOTONES
+=========================*/
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 25px;
+    border-top: 1px solid #eee;
+}
+
+.btn-gris {
+    background: #2E7D32;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn-gris:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(46, 125, 50, .30);
+}
+
+.btn-foto {
+    margin-top: 15px;
+    border: none;
+    background: #2E7D32;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-foto:hover {
+    background: #1B5E20;
+}
+

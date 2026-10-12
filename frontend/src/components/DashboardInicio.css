@@ -1,0 +1,631 @@
+/* =========================================================
+   DASHBOARD INICIO
+========================================================= */
+.dashboard-inicio {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 20px 60px 60px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========================================================
+   TARJETA DE BIENVENIDA
+========================================================= */
+.welcome {
+    width: 100%;
+    min-height: 300px;
+    padding: 55px 60px;
+    margin: 0 0 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff 0%, #f3faf5 100%);
+    border: 1px solid #dce9df;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(15, 42, 29, 0.09);
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+/* =========================================================
+   BARRA VERDE SUPERIOR
+========================================================= */
+.welcome::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: linear-gradient(90deg, #0f2a19, #16803c, #4caf50);
+}
+
+/* =========================================================
+   TÍTULO DE BIENVENIDA
+========================================================= */
+.welcome h1 {
+    margin: 0 0 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1b5e20;
+}
+
+/* =========================================================
+   DESCRIPCIÓN DE BIENVENIDA
+========================================================= */
+.welcome p {
+    margin: 0;
+    font-size: 21px;
+    line-height: 1.6;
+    color: #64748b;
+}
+
+/* =========================================================
+   TARJETAS DE ESTADÍSTICAS
+========================================================= */
+.cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 0 0 38px;
+
+}
+
+/* =========================================================
+   TARJETA INDIVIDUAL (Mejorada con borde superior vivo)
+========================================================= */
+.card {
+    min-height: 250px;
+    /* Aumentado de 210px */
+    padding: 45px 35px;
+    /* Más espacio vertical */
+    background: #ffffff;
+    border: 1px solid #e1ebe4;
+    border-top: 5px solid #2e7d32;
+    /* Borde superior un poco más grueso */
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(15, 42, 29, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* =========================================================
+   HOVER DE TARJETAS
+========================================================= */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(15, 42, 29, 0.14);
+    border-color: #b9dfc0;
+}
+
+/* =========================================================
+   TÍTULO DE LAS TARJETAS
+========================================================= */
+.card h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #334155;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card h3::first-letter {
+    font-size: 24px;
+    background: #eef8f1;
+    padding: 10px 12px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================================================
+   NÚMEROS
+========================================================= */
+.card strong {
+    font-size: 64px;
+    /* Número principal más grande e impactante */
+    line-height: 1;
+    color: #16803c;
+    font-weight: 700;
+}
+
+/* =========================================================
+   ESTADO DEL PROCESO
+========================================================= */
+.estado-proceso {
+    width: 100%;
+    margin: 75px 0 30px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+
+
+.estado-proceso h2 {
+    color: #14532d;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 50px 0 25px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.estado-proceso h2:before {
+    content: "";
+    width: 6px;
+    height: 22px;
+    background: #16803c;
+    border-radius: 4px;
+}
+
+
+.avisos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* Tarjeta */
+.aviso {
+    min-height: 170px;
+    padding: 28px 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background: #ffffff;
+    border: 1px solid #dce9df;
+    border-left: 6px solid #2e7d32;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 24px rgba(15, 42, 29, 0.08);
+
+    box-sizing: border-box;
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+/* Efecto al pasar el mouse */
+.aviso:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(15, 42, 29, 0.13);
+}
+
+/* Iconos Lucide */
+.aviso > svg {
+    width: 42px;
+    height: 42px;
+
+    padding: 4px;
+
+    color: #16803c;
+    background: #eef8f1;
+
+    border-radius: 14px;
+
+    flex-shrink: 0;
+}
+
+/* Texto */
+.aviso-texto {
+    flex: 1;
+}
+
+.aviso h3 {
+    margin: 0 0 7px;
+
+    color: #14532d;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.aviso strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #16803c;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.aviso p {
+    margin: 0;
+
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Botón */
+.aviso a {
+    padding: 10px 16px;
+
+    background: #eef8f1;
+    color: #176b2c;
+
+    border: 1px solid #b9dfc0;
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition: all 0.2s ease;
+}
+
+.aviso a:hover {
+    background: #2e7d32;
+    color: #ffffff;
+    border-color: #2e7d32;
+}
+
+/* =========================================================
+   CONTENEDOR DE MÓDULOS (CARDS-DOS)
+========================================================= */
+.cards-dos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 40px 0 20px;
+    box-sizing: border-box;
+}
+
+.cards-dos .targeta {
+    background: #ffffff;
+    border: 1px solid #d7e9da;
+    border-top: 5px solid #2e7d32;
+    /* Borde superior a juego */
+    border-radius: 20px;
+    padding: 35px 25px;
+    /* Más padding para hacerla más alta */
+    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 240px;
+    /* Aumentado de 200px para que luzcan más grandes */
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.cards-dos .targeta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(46, 125, 50, 0.15);
+    border-color: #b9dfc0;
+}
+
+.cards-dos .targeta h3 {
+    margin: 0 0 12px 0;
+    color: #14532d;
+    font-size: 20px;
+    /* Título de tarjeta secundaria más grande */
+    font-weight: 700;
+}
+
+.cards-dos .targeta p {
+    margin: 0 0 20px 0;
+    color: #6b8a73;
+    font-size: 14px;
+    /* Texto descriptivo un poco más legible */
+    line-height: 1.5;
+}
+
+.cards-dos .targeta a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 12px 0;
+    /* Botón ligeramente más alto */
+    background: #eef8f1;
+    color: #176b2c;
+    border: 1px solid #b9dfc0;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all .2s ease;
+}
+
+.cards-dos .targeta a:hover {
+    background: #2e7d32;
+    color: #ffffff;
+    border-color: #2e7d32;
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2);
+}
+
+.card-header-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.card-icon {
+    font-size: 22px;
+    color: #16803c;
+    background: #eef8f1;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+}
+
+/* =========================================================
+   BOTÓN "ABRIR MÓDULO" (<Link>) DE TARJETAS PRINCIPALES
+========================================================= */
+.card a {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 12px 0;
+    background: #eef8f1;
+    color: #176b2c;
+    border: 1px solid #b9dfc0;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all .2s ease;
+}
+
+.card a:hover {
+    background: #2e7d32;
+    color: #ffffff;
+    border-color: #2e7d32;
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2);
+}
+
+/* =========================================================
+   TÍTULOS DE SECCIÓN ESTILIZADOS CON LÍNEA LATERAL
+========================================================= */
+.section-title {
+    color: #14532d;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 50px 0 25px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.section-title::before {
+    content: "";
+    width: 6px;
+    height: 22px;
+    background: #16803c;
+    border-radius: 4px;
+}
+
+.clima-targeta {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #2E7D32;
+    margin-top: 40px;
+}
+
+.clima-targeta h3 {
+    color: #2E7D32;
+    margin-bottom: 15px;
+}
+
+.clima-targeta p {
+    color: #555;
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.clima-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.clima-titulo h3 {
+    margin: 0;
+    color: #2E7D32;
+}
+
+.clima-titulo {
+    color: #14532d;
+    font-size: 20px;
+    font-weight: 700;
+
+    margin: 50px 0 25px;
+    padding-left: 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    position: relative;
+}
+
+.clima-titulo::before {
+    content: "";
+    width: 5px;
+    height: 28px;
+
+    background: linear-gradient(
+        180deg,
+        #16803c,
+        #4caf50
+    );
+
+    border-radius: 5px;
+
+    position: absolute;
+    left: 0;
+}
+
+.sol {
+    width: 40px;
+    height: 40px;
+    color: #FBC02D;
+}
+
+.luna {
+    width: 40px;
+    height: 40px;
+    color: #5C6BC0;
+}
+
+.aviso-icono {
+    width: 46px;
+    height: 46px;
+    background: #eef8f1;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.aviso-icono svg {
+    width: 25px;
+    height: 25px;
+    color: #16803c;
+    stroke-width: 2;
+}
+
+/* =========================================================
+   PANTALLAS GRANDES
+========================================================= */
+@media (min-width: 1600px) {
+    .dashboard-inicio {
+        max-width: 1800px;
+        padding: 20px 70px 60px;
+    }
+}
+
+/* =========================================================
+   PANTALLAS MEDIANAS
+========================================================= */
+@media (max-width: 1200px) {
+    .dashboard-inicio {
+        padding: 20px 40px 50px;
+    }
+
+    .cards,
+    .cards-dos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .avisos {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+@media (max-width: 768px) {
+    .dashboard-inicio {
+        padding: 15px 20px 40px;
+    }
+
+    .welcome {
+        min-height: 250px;
+        padding: 40px 30px;
+        margin-bottom: 25px;
+    }
+
+    .welcome h1 {
+        font-size: 36px;
+    }
+
+    .welcome p {
+        font-size: 18px;
+    }
+
+    .cards,
+    .cards-dos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .card {
+        min-height: 170px;
+        padding: 25px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card strong {
+        font-size: 45px;
+    }
+}
+
+/* =========================================================
+   CELULAR
+========================================================= */
+@media (max-width: 500px) {
+    .dashboard-inicio {
+        padding: 10px 15px 30px;
+    }
+
+    .welcome {
+        min-height: 220px;
+        padding: 35px 20px;
+    }
+
+    .welcome h1 {
+        font-size: 29px;
+    }
+
+    .welcome p {
+        font-size: 16px;
+    }
+
+    .cards,
+    .cards-dos {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        min-height: 150px;
+    }
+
+    .card strong {
+        font-size: 42px;
+    }
+}

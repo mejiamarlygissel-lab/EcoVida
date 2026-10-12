@@ -1,0 +1,208 @@
+/*====================================
+        NAVBAR PRINCIPAL
+=====================================*/
+
+.Navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #2E7D32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .15);
+    z-index: 1000;
+}
+
+/*====================================
+    CONTENEDOR DEL NAVBAR
+=====================================*/
+
+.Navbar > div {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 1400px;
+}
+
+.titulo-ecovida {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+/*====================================
+        MENÚ PRINCIPAL (IZQUIERDA)
+=====================================*/
+
+.left {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.left a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.left a:hover {
+    background: white;
+    color: #2E7D32;
+}
+
+/*====================================
+    CONTENEDOR Y BOTÓN DE PERFIL
+=====================================*/
+
+/* Contenedor que maneja el despliegue al pasar el mouse */
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.perfil button {
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background: rgb(243, 241, 241);
+    color: #2E7D32;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 18px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.perfil button:hover {
+    background: #c8d4e6;
+}
+
+/*====================================
+        MENÚ DESPLEGABLE
+=====================================*/
+
+.menu {
+    position: absolute;
+    top: 100%; /* Justo debajo del botón de perfil */
+    right: 0;
+    background: #ffffff;
+    width: max-content;
+    padding: 8px 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    z-index: 1000;
+    
+    /* Efecto de ocultar/mostrar con animación y transición suave */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+/* CUANDO PASAS EL MOUSE POR EL CONTENEDOR, EL MENÚ APARECE */
+.menu-container:hover .menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Lista del menú desplegable */
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de los enlaces del menú desplegable */
+.menu ul li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    color: #2d3748;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+}
+
+/* Efecto Hover dentro del menú */
+.menu ul li a:hover {
+    background-color: #f7fafc;
+}
+
+/* Separador sutil entre elementos */
+.menu ul li:not(:last-child) a {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Iconos dentro del menú desplegable */
+.menu ul li a svg {
+    font-size: 20px;
+    min-width: 20px;
+    color: #2E7D32;
+}
+
+/* Ajuste especial para la opción de Cerrar sesión (último elemento) */
+.menu ul li:last-child a {
+    color: #e53e3e;
+}
+
+.menu ul li:last-child a svg {
+    color: #e53e3e;
+}
+
+.menu ul li:last-child a:hover {
+    background-color: #fff5f5;
+}
+.menu-btn {
+    background: #ffffff; /* Fondo blanco limpio */
+    color: #2E7D32; /* Texto e icono en color verde corporativo */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Borde sutil */
+    padding: 10px 18px;
+    border-radius: 12px; /* Esquinas redondeadas y modernas */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el icono y la palabra Menú */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Sombra ligera */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Efecto al pasar el mouse por encima */
+.menu-btn:hover {
+    background: rgba(255, 255, 255, 0.15); /* Fondo semitransparente elegante sobre el verde */
+    color: #ffffff; /* Texto e icono cambian a blanco */
+    border-color: #ffffff;
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo del icono dentro del botón */
+.menu-btn svg {
+    font-size: 18px;
+    transition: color 0.3s ease;
+}

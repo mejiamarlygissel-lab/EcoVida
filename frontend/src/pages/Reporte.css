@@ -1,0 +1,282 @@
+/* ========================================================== */
+/* CONTENEDOR PRINCIPAL DEL MÓDULO REPORTE                    */
+/* ========================================================== */
+.reporte-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+  width: 100%;                  /* Ocupa el 100% de la pantalla */
+  max-width: 100%;              /* Elimina el límite angosto */
+ 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  
+}
+
+/* ========================================================== */
+/* TARJETA DE FILTROS DEL REPORTE                             */
+/* ========================================================== */
+.reporte-filtros-card {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 20px;
+  padding: 70px;
+  width: 100%;
+  max-width: 650px;             /* Tarjeta más espaciosa */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  
+}
+.reporte-filtros-card.centrado {
+  margin: auto;
+}
+
+.reporte-card-header-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reporte-card-header-title h2 {
+  color: #1e8a25;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.reporte-card-header-title p {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+/* Grupos de formularios de filtros */
+.reporte-filtro-grupo {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reporte-filtro-grupo label {
+  font-size: 0.85rem;
+  color: #374151;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.reporte-filtro-input, .reporte-filtro-select {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #111827;
+  padding: 20px 20px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.reporte-filtro-input:focus, .reporte-filtro-select:focus {
+  border-color: #1e8a27;
+}
+
+.reporte-filtro-fila-fechas {
+  display: flex;
+  gap: 10px;
+}
+
+.reporte-filtro-acciones {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.reporte-btn-consultar {
+  background-color: #0a430b; /* Azul institucional formal */
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  padding: 11px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.reporte-btn-consultar:hover {
+  background-color: #3b9419;
+}
+
+/* ========================================================== */
+/* TARJETA DEL REPORTE (Estilo Documento / Hoja de Informe)   */
+/* ========================================================== */
+.reporte-resultado-card {
+  background-color: #ffffff;
+  color: #111827;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 750px; /* Ancho de hoja formal */
+  padding: 50px 60px;
+ 
+  
+  box-sizing: border-box;
+  animation: reporteFadeIn 0.3s ease-in-out;
+  position: relative;
+}
+
+.reporte-header {
+  text-align: center;
+  border-bottom: 2px solid #1e8a39;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.reporte-header h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1e8a22;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.reporte-header h3 {
+  font-size: 0.9rem;
+  color: #4b5563;
+  font-weight: normal;
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 12px;
+}
+
+.reporte-divider-line {
+  display: none; 
+}
+
+.reporte-section {
+  margin-bottom: 20px;
+}
+
+.reporte-section h4 {
+  font-size: 0.95rem;
+  color: #1e8a35;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.reporte-section p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+  color: #374151;
+  margin-top: 25px;
+}
+
+.reporte-section strong {
+  color: #111827;
+}
+
+/* ========================================================== */
+/* BOTONES DE ACCIÓN (Imprimir / Volver)                      */
+/* ========================================================== */
+.reporte-acciones-botones {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 20px;
+}
+
+.reporte-btn-pdf {
+  flex: 1;
+  background-color: #0f4405;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.reporte-btn-pdf:hover {
+  background-color: #269c11;
+}
+
+.reporte-btn-volver {
+  background-color: transparent;
+  color: #4b5563;
+  border: 1px solid #d1d5db;
+  padding: 10px 20px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.reporte-btn-volver:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+/* ========================================================== */
+/* ANIMACIONES Y RESPONSIVIDAD                                */
+/* ========================================================== */
+@keyframes reporteFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 850px) {
+  .reporte-main-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+}
+
+/* ========================================================== */
+/* CONFIGURACIÓN DE IMPRESIÓN Y PDF                           */
+/* ========================================================== */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .reporte-resultado-card, .reporte-resultado-card * {
+    visibility: visible;
+  }
+
+  .reporte-resultado-card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    box-shadow: none;
+  
+    padding: 20px;
+  }
+
+  .reporte-acciones-botones {
+    display: none;
+  }
+}

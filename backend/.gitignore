@@ -1,0 +1,9 @@
+/target/
+.vscode/launch.json
+*.jar
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.env
+.env.*
