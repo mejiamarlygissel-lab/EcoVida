@@ -202,7 +202,7 @@ public class SecurityConfig {
                 // Permite solicitudes provenientes del frontend React
                 // que funciona en localhost:5173
                 configuration.setAllowedOrigins(
-                                List.of("http://localhost:5173"));
+                                List.of("http://localhost:5173","https://eco-vida-cyan.vercel.app"));
 
 
                 // Define los métodos HTTP permitidos desde React
